@@ -1,0 +1,69 @@
+# ==============================================================================
+# StockFlow — Master Monorepo .gitignore
+# ==============================================================================
+
+# ── Dependencies ─────────────────────────────────────────────────────────────
+node_modules/
+*/node_modules/
+
+# ── Environment Files & Credentials (CRITICAL - NEVER COMMIT REAL SECRETS) ───
+.env
+.env.*
+*.env
+*.env.*
+backend/.env
+backend/.env.*
+fronend/.env
+fronend/.env.*
+frontend/.env
+frontend/.env.*
+
+# ── Explicitly allow example templates ───────────────────────────────────────
+!.env.example
+!*.env.example
+!backend/.env.example
+!fronend/.env.example
+!frontend/.env.example
+
+# ── Build & Distribution Artifacts ───────────────────────────────────────────
+dist/
+dist-ssr/
+build/
+*/dist/
+*/dist-ssr/
+*/build/
+
+# ── Logs & Debugging Output ──────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Operating System Artifacts ───────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ── Editor & IDE Directories ─────────────────────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ── Testing & Coverage Reports ───────────────────────────────────────────────
+coverage/
+.nyc_output/
+*.tmp
